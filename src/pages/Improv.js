@@ -1,8 +1,8 @@
-import react from 'react'
+import React from 'react'
 
 const Improv = () => {
     return(
-        <h1>Yas Improv</h1>
+        <h1>Improv - YAS</h1>
     )
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Codes = () => {
     return(
-        <h1>Yas!</h1>
+        <h1>Codes - Yas!</h1>
     )
 }
 
