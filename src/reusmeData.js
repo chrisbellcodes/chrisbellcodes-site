@@ -20,7 +20,7 @@ const resumeData = {
         location: 'New York, NY',
         startDate: '2017',
         endDate: '2020',
-        role: [
+        roles: [
             {
                 title: 'Technology / Operations Manager',
                 startDate: '2017',
@@ -34,7 +34,7 @@ const resumeData = {
         location: 'New York, NY',
         startDate: '2015',
         endDate: '2017',
-        role: [
+        roles: [
             {
                 title: 'Business Manager',
                 startDate: '2015',
@@ -48,7 +48,7 @@ const resumeData = {
         location: 'New York, NY',
         startDate: '2009',
         endDate: '2015',
-        role: [
+        roles: [
             {
                 title: 'Executive Producer',
                 startDate: '2014',
@@ -74,7 +74,7 @@ const resumeData = {
         location: 'New York, NY',
         startDate: '2017',
         endDate: '2020',
-        role: [
+        roles: [
             {
                 title: '',
                 startDate: '2017',
@@ -94,3 +94,4 @@ const resumeData = {
     }]
 }
 
+export default resumeData
