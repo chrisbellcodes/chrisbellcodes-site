@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Experience = ({company, startDate, endDate, location, roles}) => {
-    console.log(roles);
     
     const displayRoles = () => {
         const displayTasks = tasks => {
@@ -13,11 +12,11 @@ const Experience = ({company, startDate, endDate, location, roles}) => {
 
         if(roles.length > 1) {
             // iterate over each role
-            const rolesJSX = roles.map((role) => {
+            const rolesJSX = roles.map((role, i) => {
                 const { title, startDate, endDate, tasks } = role
                 let taskBullets = displayTasks(tasks)
                 return (
-                    <React.Fragment>
+                    <React.Fragment key={i}>
                         <h3>{title} {startDate} - {endDate}</h3>
                         {taskBullets}
                     </React.Fragment>
