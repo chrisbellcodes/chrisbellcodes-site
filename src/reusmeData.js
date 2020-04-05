@@ -3,6 +3,35 @@ const resumeData = {
         proficient: ['JavaScript', 'React.JS', 'Redux', 'Node.JS', 'Express', 'MongoDB', 'Mongoose' ,'Ruby', 'Rails', 'Git', 'HTML', 'CSS', 'SASS', 'PostgreSQL'],
         exposure: ['Docker', 'Java', 'Jest']
     },
+    projects: [
+        {
+            name: 'Give it Up App',
+            description: 'Users give up a vice (1x per month) and donate cost to arts education',
+            details: [
+                'Integrated REST API using Rails to handle requests for user profiles, subscriptions, and vice list',
+                'Created custom single-factor authentication using BCyrpt’s hashing function to store encrypted passwords',
+                'Used JSON Web Token to authorize API endpoints for individual user information',
+                'Built dynamic UI with React / Redux to allow users to select vices to donate, add and remove vices from cart, and view past subscriptions'
+            ],
+            tech: [
+                'Rails',
+                'React',
+                'Bootstrap'
+            ]
+        },
+        {
+            name: 'DiNet App',
+            description: 'The “Meetup” app for dinner parties',
+            details: [
+                'Built responsive design using Bootstrap to display parties user is hosting or attending', 
+                'Used Rails’ self-joining association feature to store all users in a single database model, but differentiate users who are hosting a party from users who are attending a party',
+                'Implemented combination of Bcrypt and sessions to create secure login for users to view their unique party information'
+            ],
+            tech: [
+                'Rails'
+            ]
+        }
+    ],
     education: [{
         school: 'The Flatiron School',
         location: 'New York, NY',
