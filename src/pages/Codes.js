@@ -4,6 +4,7 @@ import { Link, useRouteMatch } from 'react-router-dom'
 import Projects from '../containers/Projects';
 import Resume from '../containers/Resume';
 import Skills from '../containers/Skills';
+import Education from '../containers/Education';
 
 const Codes = () => {
     let { url } = useRouteMatch();
@@ -17,6 +18,7 @@ const Codes = () => {
             <Skills />
             <Projects />
             <Resume />
+            <Education />
             {/* Sets up links */}
             <ul>
                 <li>
