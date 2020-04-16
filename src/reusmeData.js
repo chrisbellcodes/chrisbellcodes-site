@@ -1,7 +1,7 @@
 const resumeData = {
     skills: {
-        proficient: ['JavaScript', 'React.JS', 'Redux', 'Node.JS', 'Express', 'MongoDB', 'Mongoose' ,'Ruby', 'Rails', 'Git', 'HTML', 'CSS', 'SASS', 'PostgreSQL'],
-        exposure: ['Docker', 'Java', 'Jest']
+        proficient: ['JavaScript', 'React.JS', 'Redux', 'Node.JS', 'Express', 'MongoDB', 'Mongoose' ,'Ruby', 'Rails', 'Git', 'HTML / CSS', 'SASS', 'PostgreSQL'],
+        exposure: ['Docker', 'Java', 'Jest', 'Rspec']
     },
     projects: [
         {

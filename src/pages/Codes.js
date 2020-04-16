@@ -1,35 +1,22 @@
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom'
 
-import Projects from '../containers/Projects';
-import Resume from '../containers/Resume';
-import Skills from '../containers/Skills';
-import Education from '../containers/Education';
 
 const Codes = () => {
     let { url } = useRouteMatch();
 
     return(
         <div>
-            <h2>ChrisBell's LinkedIn</h2>
-            <h2>ChrisBell's Github</h2>
-            <h2>ChrisBell's Contact</h2>
-            
-            <Skills />
-            <Projects />
-            <Resume />
-            <Education />
-            {/* Sets up links */}
+                <h2>
+                    <span>LinkedIn</span> 
+                    <span>Github</span> 
+                    <span>Contact</span>
+                </h2>
+               
             <ul>
-                <li>
-                    <Link to={`${url}codes-skills`}>Skills</Link>
-                </li>
-                <li>
-                    <Link to={`${url}codes-projects`}>Projects</Link>
-                </li>
-                <li>
-                    <Link to={`${url}codes-resume`}>Resume</Link>
-                </li>
+                <li><Link to={`${url}codes-projects`}>Skills & Projects</Link></li>
+                <li><Link to={`${url}codes-resume`}>Resume</Link></li>
+                <li><Link to={`${url}codes-edu`}>Education</Link></li>   
             </ul>
         </div>
     )

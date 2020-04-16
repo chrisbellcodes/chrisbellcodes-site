@@ -10,7 +10,9 @@ const Resume = () => {
 
     return(
         <div>
+            <button> Back</button>
             {workExperience}
+            <button> Back</button>
         </div>
     )
 }

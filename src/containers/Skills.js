@@ -35,7 +35,6 @@ const Skills = () => {
 
     return (
         <div>
-            YAS - Skills - YAS
             {renderSkills()}
         </div>
     )
