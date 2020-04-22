@@ -1,8 +1,11 @@
 import React from 'react'
+import UnderConstruction from '../components/UnderConstruction'
 
 const Improv = () => {
     return(
-        <h1>Improv - YAS</h1>
+        <div>
+            <UnderConstruction />
+        </div>
     )
 }
 

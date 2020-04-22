@@ -1,8 +1,9 @@
 import React from 'react';
+import UnderConstruction from '../components/UnderConstruction';
 
 const Misc = () => {
     return(
-        <h1>Misc - YAS</h1>
+        <UnderConstruction />
     )
 }
 

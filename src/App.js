@@ -15,8 +15,8 @@ import Projects from './containers/Projects';
 function App() {
   return (
     <div className="App">
-      <h1 className="App-logo">
-        ChrisBell
+      <h1>
+        Chris Bell
       </h1>
       <Navbar />
       
