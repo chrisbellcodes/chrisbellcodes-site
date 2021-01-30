@@ -1,35 +1,31 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom'
-import linkedinIcon from '../assets/linkedin-icon.png'
-import githubIcon from '../assets/github-icon.png'
-import emailIcon from '../assets/email-icon.png'
+import { Link } from 'react-router-dom'
+import me from '../assets/chris-bell.jpeg'
 
 
 
 const Codes = () => {
-    let { url } = useRouteMatch();
 
     return(
-        <div>
-            <div>
-                <a className="pro-links" href="https://www.linkedin.com/in/letchrisbellring/">
-                    <img className="pro-icon" src={linkedinIcon} alt="LinkedIn Logo" />
-                    LinkedIn
-                </a> 
-                <a className="pro-links" href="https://github.com/chrisbellcodes">
-                    <img className="pro-icon" src={githubIcon} alt="Github Logo" />
-                    Github
-                </a>
-                <a className="pro-links" href="mailto:chrisbellcodes@gmail.com">
-                    <img className="pro-icon" src={emailIcon} alt="Email icon" />
-                    Contact Me
-                </a>
+        <div className="codes-wrapper">
+
+            <div className="about-section">
+
+                <div className="headshot-container">
+                    <div style={{backgroundImage: 'url(' + me + ')'}} className="headshot"></div>
+                </div>
+                <div className="about-content">
+                    <h2>About</h2>
+                    <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.</p>
+                </div>
             </div>
 
             <div>
                 <div><Link className="content-list" to={`/codes-projects`}>Skills & Projects</Link></div>
                 <div><Link className="content-list" to={`/codes-resume`}>Resume</Link></div>
                 <div><Link className="content-list" to={`/codes-edu`}>Education</Link></div>
+                <div><a className="content-list" target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/letchrisbellring/">LinkedIn</a></div>
+                <div><a className="content-list" target="_blank" rel='noreferrer' href="https://github.com/chrisbellcodes">GitHub</a></div>
             </div>
         </div>
     )

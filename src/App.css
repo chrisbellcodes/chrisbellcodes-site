@@ -1,35 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:900&display=swap');
 
-/* <<<<<<<< APP >>>>>>>>>> */
+/* <<<<<<<< General >>>>>>>>>> */
 
-*{
-    background-color: #067bc2;
-    color: aliceblue;
-    font-family: 'Catamaran';
+:root {
+  --basic-font: 'Catamaran';
+  --white: whitesmoke;
+  --blue: #067bc2;
+  --text-color: black;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: var(--basic-font);
     list-style-type: none;
 }
 
-/* <<<<<<<< APP >>>>>>>>>> */
-.App {
+/* .App {
   text-align: center;
+} */
+
+
+/* <<<<<<<< Navbar >>>>>>>>>> */
+.navbar, .navbar a, .navItems {
+  background-color: whitesmoke;
 }
 
-.App-logo {
- font-size: 50px;
- margin: 0px;
- padding: 0px;
+.logo {
+    color: black;
+    background-color: whitesmoke;
+    margin: 0px;
+    width: 200px;
 }
+
+.bell {
+    color: black;
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 .navbar {
+  display: flex;
   margin: 0px 0 30px 0;
-  position: relative;
-  bottom: 10px;
 }
+
+.navItems {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbarItem {
   margin: 0px 15px 0px 15px;
   text-decoration: none;
   font-size: 20px;
-  /* margin: 15px 0px 15px 0px; */
-  color: aliceblue;
+  color: black;
 }
 
 .navbarItem:hover {
@@ -38,6 +65,16 @@
 
 .navbarItem:Focus {
   font-size: 32px;
+}
+
+
+
+/* <<<<<<<< APP >>>>>>>>>> */
+
+.App-logo {
+ font-size: 50px;
+ margin: 0px;
+ padding: 0px;
 }
 
 .pro-links {
@@ -83,3 +120,21 @@
   height: 35px;
   width: 35px;
 }
+
+/* .about {
+  margin-bottom: 20px;
+  height: 350px;
+  width: 100%;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.about-left {
+  grid-column: 2 / span 2;
+  height: 0;
+  width: 100%;
+  border-left: 350px solid transparent;
+  border-top: 350px solid whitesmoke;
+  color: black;
+} */
